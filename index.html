@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/default.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>Matrix of the soul</title>
+        <script src="js/jQuery.js"></script>
+    </head>
+    <body>
+        <!--
+            https://ajgollov.com/calc_personal
+        -->
+        <div class="wrapper">
+            <div class="content">
+                <header class="container">
+                    <div class="header__container">
+                        <h2>Matrix of the soul</h2>
+                    </div>
+                </header>
+
+                <main class="page">
+                    <section class="page__main container">
+                        <h1 class="main__title">Владік + Танюха = % Ілюхє</h1>
+
+                        <div class="input_data">
+                            <div>
+                                <select id="day"></select>
+                                <span>/</span>
+                                <select id="month"></select>
+                                <span>/</span>
+                                <select id="year"></select>
+                            </div>
+                            <div
+                                class="button"
+                                id="--lang-btn-calc"
+                                onclick="calculate()"
+                            >
+                                Calculate
+                            </div>
+                        </div>
+
+                        <div class="main__matrix_image">
+                            <div class="ma main_circle">11</div>
+                            <div class="s1 main_circle">11</div>
+                            <div class="s2 main_circle">11</div>
+                            <div class="mu1 main_circle">11</div>
+                            <div class="mu2 main_circle">11</div>
+                            <div class="t1 main_circle">11</div>
+                            <div class="t2 main_circle">11</div>
+                            <div class="t3 main_circle">11</div>
+                            <div class="t4 main_circle">11</div>
+                            <div class="ad1 main_circle_middle">11</div>
+                            <div class="ad2 main_circle_middle">11</div>
+                            <div class="st1 main_circle_middle">11</div>
+                            <div class="st2 main_circle_middle">11</div>
+                            <div class="st3 main_circle_small">11</div>
+                            <div class="st4 main_circle_small">11</div>
+                            <div class="st5 main_circle_small">11</div>
+                            <div class="v1 main_circle_small">11</div>
+                            <div class="v2 main_circle_small">11</div>
+                            <div class="sv1 main_circle_small">11</div>
+                            <div class="sv2 main_circle_small">11</div>
+                            <div class="an1 main_circle_small">11</div>
+                            <div class="an2 main_circle_small">11</div>
+                            
+                            <div class="y1_2 year_element">7</div>
+                            <div class="y2_3 year_element">72</div>
+                            <div class="y3_4 year_element">72</div>
+                            <div class="y5 year_element">72</div>
+                            <div class="y6_7 year_element">7</div>
+                            <div class="y7_8 year_element">1</div>
+                            <div class="y8_9 year_element">1</div>
+                           
+                            <div class="y11_12 year_element">1</div>
+                            <div class="y12_13 year_element">1</div>
+                            <div class="y13_14 year_element">1</div>
+                            <div class="y15 year_element">1</div>
+                            <div class="y16_17 year_element">1</div>
+                            <div class="y17_18 year_element">1</div>
+                            <div class="y18_19 year_element">1</div>
+
+                            <div class="y21_22 year_element">1</div>
+                            <div class="y22_23 year_element">1</div>
+                            <div class="y23_24 year_element">1</div>
+                            <div class="y25 year_element">1</div>
+                            <div class="y26_27 year_element">1</div>
+                            <div class="y27_28 year_element">1</div>
+                            <div class="y28_29 year_element">1</div>
+
+                            <div class="y31_32 year_element">1</div>
+                            <div class="y32_33 year_element">1</div>
+                            <div class="y33_34 year_element">1</div>
+                            <div class="y35 year_element">1</div>
+                            <div class="y36_37 year_element">1</div>
+                            <div class="y37_38 year_element">1</div>
+                            <div class="y38_39 year_element">1</div>
+
+                            <div class="y41_42 year_element">1</div>
+                            <div class="y42_43 year_element">1</div>
+                            <div class="y43_44 year_element">1</div>
+                            <div class="y45 year_element">1</div>
+                            <div class="y46_47 year_element">1</div>
+                            <div class="y47_48 year_element">1</div>
+                            <div class="y48_49 year_element">1</div>
+
+                            <div class="y51_52 year_element">1</div>
+                            <div class="y52_53 year_element">1</div>
+                            <div class="y53_54 year_element">1</div>
+                            <div class="y55 year_element">1</div>
+                            <div class="y56_57 year_element">1</div>
+                            <div class="y57_58 year_element">1</div>
+                            <div class="y58_59 year_element">1</div>
+
+                            <div class="y61_62 year_element">1</div>
+                            <div class="y62_63 year_element">1</div>
+                            <div class="y63_64 year_element">1</div>
+                            <div class="y65 year_element">1</div>
+                            <div class="y66_67 year_element">1</div>
+                            <div class="y67_68 year_element">1</div>
+                            <div class="y68_69 year_element">1</div>
+
+                            <div class="y71_72 year_element">1</div>
+                            <div class="y72_73 year_element">1</div>
+                            <div class="y73_74 year_element">1</div>
+                            <div class="y75 year_element">1</div>
+                            <div class="y76_77 year_element">1</div>
+                            <div class="y77_78 year_element">1</div>
+                            <div class="y78_79 year_element">1</div>
+
+                            <img src="img/matrix.svg" alt="matrix" />
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+            <footer class="footer">
+                <div class="footer__block">Spizheno 2023 ©</div>
+            </footer>
+        </div>
+        <script src="js/options.js"></script>
+        <script src="js/calculate.js"></script>
+    </body>
+</html>
