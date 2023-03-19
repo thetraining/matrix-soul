@@ -657,13 +657,27 @@ function setDataToMatrix(calc) {
 }
 
 function calculate() {
-    let day = parseInt($(".input_data #day").find(":selected").text());
-    let month = parseInt($(".input_data #month").find(":selected").text());
-    let year = parseInt($(".input_data #year").find(":selected").text());
+    let user_name = $("#uname").val();
+    if (user_name.length < 2) {
+        alert("Введіть своє ім'я");
+    }
+    else {
+        let day = parseInt($(".input_data #day").find(":selected").text());
+        let month = parseInt($(".input_data #month").find(":selected").text());
+        let year = parseInt($(".input_data #year").find(":selected").text());
+        
 
-    $("#second_pseudo_page").css("display", "block");
+        console.log(day, month, year)
 
-    let calc = new CalcData(day, month, year);
-    setDataToMatrix(calc);
-    setDataToTable(calc);
+        $(".main__matrix_image").css("display", "block");
+        $(".matrix__text").css("display", "block");
+        var elem = document.getElementsByClassName('matrix__text'); 
+        elem[0].innerHTML = user_name + ", Ваша матриця:"
+
+    
+        let calc = new CalcData(day, month, year);
+        setDataToMatrix(calc);
+        setDataToTable(calc);
+    }
+
 }
