@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/default.css" />
         <link rel="stylesheet" href="css/style.css" />
 
-        <title>Matrix of the soul</title>
+        <title>Калькулятор матриці долі</title>
         <script src="js/jQuery.js"></script>
     </head>
     <body>
@@ -19,31 +19,51 @@
             <div class="content">
                 <header class="container">
                     <div class="header__container">
-                        <h2>Matrix of the soul</h2>
+                        <a
+                            class="insta_link"
+                            href="https://www.instagram.com/tati.energyy/"
+                            target="_blank"
+                            >tati.energyy</a
+                        >
                     </div>
                 </header>
 
                 <main class="page">
                     <section class="page__main container">
-                        <h1 class="main__title">Владік + Танюха = % Ілюхє</h1>
+                        <h1 class="main__title">Калькулятор матриці долі</h1>
 
                         <div class="input_data">
-                            <div>
-                                <select id="day"></select>
-                                <span>/</span>
-                                <select id="month"></select>
-                                <span>/</span>
-                                <select id="year"></select>
+                            <div class="data_name">
+                                <label for="uname">Ім'я:</label>
+                                <input
+                                    type="text"
+                                    id="uname"
+                                    name="name"
+                                    placeholder="Введіть ім'я"
+                                />
+                            </div>
+                            <div class="birthday_date">
+                                <label for="day"
+                                    >Оберіть дату народження:</label
+                                >
+                                <div class="birthday_select">
+                                    <select id="day"></select>
+                                    <span>/</span>
+                                    <select id="month"></select>
+                                    <span>/</span>
+                                    <select id="year"></select>
+                                </div>
                             </div>
                             <div
                                 class="button"
                                 id="--lang-btn-calc"
                                 onclick="calculate()"
                             >
-                                Calculate
+                                Розрахувати
                             </div>
                         </div>
 
+                        <div class="matrix__text">Ваша матриця:</div>
                         <div class="main__matrix_image">
                             <div class="ma main_circle">11</div>
                             <div class="s1 main_circle">11</div>
@@ -67,7 +87,7 @@
                             <div class="sv2 main_circle_small">11</div>
                             <div class="an1 main_circle_small">11</div>
                             <div class="an2 main_circle_small">11</div>
-                            
+
                             <div class="y1_2 year_element">7</div>
                             <div class="y2_3 year_element">72</div>
                             <div class="y3_4 year_element">72</div>
@@ -75,7 +95,7 @@
                             <div class="y6_7 year_element">7</div>
                             <div class="y7_8 year_element">1</div>
                             <div class="y8_9 year_element">1</div>
-                           
+
                             <div class="y11_12 year_element">1</div>
                             <div class="y12_13 year_element">1</div>
                             <div class="y13_14 year_element">1</div>
@@ -139,7 +159,7 @@
             </div>
 
             <footer class="footer">
-                <div class="footer__block">Spizheno 2023 ©</div>
+                <div class="footer__block">Matrix of the soul 2023 ©</div>
             </footer>
         </div>
         <script src="js/options.js"></script>
