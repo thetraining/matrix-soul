@@ -743,7 +743,6 @@ body {
 }
 
 @media (max-width: 390px) {
-    
     .main__title {
         font-size: 3em;
     }
@@ -763,15 +762,34 @@ body {
     .main_circle_small {
         font-size: 50%;
     }
+
+    .input_data select {
+        padding: 2px 0px;
+        margin: 5px 5px 5px 0;
+    }
 }
 
-@media(max-width: 370px) {
+@media (max-width: 370px) {
     .main__title {
         font-size: 2.5em;
     }
 
     .button {
         font-size: 20px;
+    }
+}
+
+@media(max-width: 350px) {
+    
+    .input_data select {
+             font-size: 1em;
+    }
+}
+
+@media(max-width: 325px) {
+    
+    .input_data select {
+             font-size: 0.7em;
     }
 }
 
