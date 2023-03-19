@@ -789,7 +789,11 @@ body {
 @media(max-width: 325px) {
     
     .input_data select {
-             font-size: 0.7em;
+        font-size: 0.7em;
+    }
+    
+    .birthday_date label {
+        font-size: 0.7em;
     }
 }
 
