@@ -767,6 +767,10 @@ body {
         padding: 2px 0px;
         margin: 5px 5px 5px 0;
     }
+    
+    .birthday_date label {
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 370px) {
