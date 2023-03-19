@@ -60,11 +60,43 @@ body {
 .main__title {
     font-size: 4em;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.insta_link {
+    font-size: 2em;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.insta_link:hover {
+    opacity: 0.7;
+}
+
+.insta_link::before {
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url(../img/insta.svg);
+    margin-right: 10px;
 }
 
 .main__matrix_image {
     max-width: 700px;
     position: relative;
+    display: none;
+    margin-top: 50px;
+}
+
+.matrix__text {
+    font-size: 2em;
+    font-weight: 500;
+    display: none;
 }
 
 .main__matrix_image img {
@@ -79,23 +111,48 @@ body {
     max-width: 300px;
     margin: 60px auto;
     margin-bottom: 40px;
+    font-size: 1.5em;
 }
 
-.input_data > div {
+.data_name {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.data_name label, #uname {
+    width: 100%;
+}
+
+#uname {
+    margin-top: 10px;
+    border: 1px solid rgb(97, 97, 97);
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+.birthday_date {
+    margin-top: 20px;
+    display: flex;
+}
+
+.birthday_date label {
+    width: 100%;
+}
+
+.birthday_select {
+    margin-top: 10px;
+    width: 100%;
 }
 
 .input_data select {
-    border: none;
+    border: 1px solid rgb(97, 97, 97);
     outline: none;
     background-color: #fff;
     width: fit-content;
     padding: 3px 6px;
     border-radius: 20px;
     border-radius: 10px;
-    margin: 0 5px;
+    margin: 5px 5px 5px 0;
     font-size: 1.25em;
 }
 
@@ -106,12 +163,12 @@ body {
     flex-wrap: wrap;
 }
 .button {
-    font-family: "FuturaStdHeavy", "Forum";
+    font-family: "Golos Text", sans-serif;
     width: fit-content;
     margin: 40px auto;
-    font-size: 16px;
+    font-size: 30px;
     cursor: pointer;
-    background-color: #fb8902;
+    background-color: #ef4141;
     max-width: 300px;
     padding: 10px 30px;
     color: #fff;
@@ -119,7 +176,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: ease-in 0.3s;
-    border: #fb8902 solid 5px;
+    border: #ef4141 solid 5px;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -127,6 +184,11 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.button:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
 }
 
 .main_circle {
@@ -674,9 +736,18 @@ body {
     .main_circle_small {
         font-size: 70%;
     }
+
+    .main__title {
+        font-size: 3.3em;
+    }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 390px) {
+    
+    .main__title {
+        font-size: 3em;
+    }
+
     .year_element {
         font-size: 30%;
     }
@@ -691,6 +762,26 @@ body {
 
     .main_circle_small {
         font-size: 50%;
+    }
+}
+
+@media(max-width: 370px) {
+    .main__title {
+        font-size: 2.5em;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 320px) {
+    .main__title {
+        font-size: 2em;
+    }
+
+    .insta_link {
+        font-size: 1.5em;
     }
 }
 
